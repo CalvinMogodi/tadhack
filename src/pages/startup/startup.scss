@@ -1,0 +1,18 @@
+page-startup {
+    ion-content {
+        background-image: url('../assets/imgs/handyman.jpg');
+       background-position: center;
+       background-size: contain;
+       background-repeat: no-repeat;
+   }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.5;
+    left: 0;
+    top:0;
+    position: absolute;
+}

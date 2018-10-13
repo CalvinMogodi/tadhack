@@ -1,17 +1,52 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header transparent>
+  <ion-navbar transparent>
+    <ion-title>Profile</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+<ion-content class="background" padding>
+    <ion-card style="border-radius: 15px">
+        <img src="assets/imgs/plumber.jpg"/>
+        <div class="card-title"></div>
+        <div class="card-subtitle center"><ion-icon name="star" class="star"></ion-icon><ion-icon name="star" class="star"></ion-icon><ion-icon name="star" class="star"></ion-icon><ion-icon name="star-half" class="star"></ion-icon><ion-icon name="star-outline" class="star"></ion-icon></div>
+    </ion-card>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
+      <ion-label><b>Name: Joe</b></ion-label>
+  </ion-item>
+  <ion-item>
+      <ion-label><b>Surname: Nkosi</b></ion-label>
+  </ion-item>
+   <ion-item>
+      <ion-label><b>Cellphone: 071 235 7865</b></ion-label>
+  </ion-item>
+
+  <ion-list>
+    <ion-list-header>
+      History
+    </ion-list-header>
+    <ion-item>Replaced Bust Pipes</ion-item>
+    <ion-item>Taps Leak</ion-item>
+    <ion-item>Drain Blockages</ion-item>
   </ion-list>
 </ion-content>
+<ion-footer class="background-color">
+  <ion-toolbar class="background-color">
+    <ion-row style="height: 20px;">
+      <ion-col style="color: #d8703f !important; margin-top:-10px;">
+        <label>R 155.23 - R1 000.00</label>
+      </ion-col>
+      <ion-col>
+          <button (click)="checkout()" class="linkbutton" ion-button icon-only clear style="float:right; margin-top: -15px;color: #d8703f !important;">
+              Accept
+          </button>
+        </ion-col>
+    </ion-row>
+      
+  </ion-toolbar>
+</ion-footer>
