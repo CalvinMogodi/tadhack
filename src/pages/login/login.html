@@ -23,7 +23,7 @@
                 </ion-item>
             </ion-list>
             <div padding>
-                <button ion-button block color="secondary" (click)="login(user)">Sign In</button>
+                <button ion-button block color="secondary" class="btn_sub" (click)="login(user)">Sign In</button>
                 <p *ngIf="showError" style="color: red;font-size: small;text-align:center"> invalid email or password. </p>
             </div>
             <ion-row style="margin-top: -20px;">
@@ -41,3 +41,7 @@
         </div>
     </form>
 </ion-content>
+
+<div class="overlay">
+
+</div>
